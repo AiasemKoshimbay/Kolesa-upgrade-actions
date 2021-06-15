@@ -9,6 +9,8 @@ jobs:
       - uses: nanasess/setup-php@master
       - name: Install dependecies
         run: composer install
+      - name: Install Webdriver
+        run: composer require --dev codeception/module-webdriver
       - name: Install faker
         run: composer require fakerphp/faker
       - name: Run chromedriver
