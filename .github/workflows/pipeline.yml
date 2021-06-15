@@ -21,7 +21,7 @@ jobs:
           sudo Xvfb -ac :99 -screen 0 1280x1024x24 > /dev/null 2>&1 & # optional
       - name: Install Rest
         run: composer require --dev codeception/module-rest
-      - name: Run tests
+      - name: Run acceptance and functional tests
         run: php vendor/bin/codecept run --steps -vvv --xml
       - name: JUnit Report Action
         if: always()
