@@ -9,6 +9,8 @@ modules:
     enabled:
         - WebDriver
         - Asserts
+        - \Helper\Acceptance
+
     config:
         WebDriver:
             url: 'https://habr.com/ru/'
@@ -21,6 +23,5 @@ modules:
             pageload_timeout: 60
             capabilities:
                 goog:chromeOptions:
-                         args: [ "--headless", "--disable-gpu" ]    
-        - \Helper\Acceptance
+                        args: [ "--headless", "--disable-gpu" ]    
 step_decorators: ~        
