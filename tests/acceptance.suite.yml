@@ -23,5 +23,5 @@ modules:
             pageload_timeout: 60
             capabilities:
                 goog:chromeOptions:
-                        args: [ "--headless --no-sandbox --disable-dev-shm-usage" ]    
+                        args: [ "--headless",  "--disable-gpu" ]    
 step_decorators: ~        
